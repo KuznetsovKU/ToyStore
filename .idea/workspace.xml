@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="corrected block Model.Storages">
+    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="changed Item attribute choiceFrequency to winningFrequency">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/ItemController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/ItemInStorageController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/Validator.java" afterDir="false" />
@@ -15,14 +15,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/View/ExceptionsDescriptor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/View/Menus.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Constructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemServiceInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686900248220</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed Item attribute choiceFrequency to winningFrequency">
+      <created>1686927118336</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686927118336</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +137,7 @@
     <MESSAGE value="added Model &amp; Service blocks" />
     <MESSAGE value="corrected Class Item" />
     <MESSAGE value="corrected block Model.Storages" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected block Model.Storages" />
+    <MESSAGE value="changed Item attribute choiceFrequency to winningFrequency" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed Item attribute choiceFrequency to winningFrequency" />
   </component>
 </project>
