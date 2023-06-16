@@ -9,7 +9,7 @@ public abstract class Storage implements StorageInterface {
 
     protected String storageType;
     protected int capacity;
-    protected List<Item> itemList = new LinkedList<>();
+
 
     public Storage(int capacity) {
         this.storageType = this.getClass().getSimpleName();
@@ -20,6 +20,9 @@ public abstract class Storage implements StorageInterface {
         return storageType;
     }
 
+    public void setStorageType(String storageType) {
+        this.storageType = storageType;
+    }
 
     public int getCapacity() {
         return capacity;
@@ -29,8 +32,5 @@ public abstract class Storage implements StorageInterface {
         this.capacity = capacity;
     }
 
-    public List<Item> getItemList() {
-        return itemList;
-    }
 
 }

@@ -3,8 +3,11 @@ package org.example.Model.Storages;
 import org.example.Model.Items.Item;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public class StorageToSell extends Storage{
+    protected List<Item> itemList = new LinkedList<>();
     public StorageToSell(int capacity) {
         super(capacity);
     }
@@ -22,6 +25,11 @@ public class StorageToSell extends Storage{
     @Override
     public void clearStorage() {
         this.itemList.clear();
+    }
+
+    @Override
+    public List<Item> getItemList() {
+        return itemList;
     }
 
     @Override

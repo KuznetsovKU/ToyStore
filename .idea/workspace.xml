@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="added Model &amp; Service blocks">
+    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="corrected Class Item">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/ItemInStorageController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/MainStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/MainStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToDrawing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToSell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686895721702</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="corrected Class Item">
+      <created>1686896457225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686896457225</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added README.md" />
     <MESSAGE value="added Model &amp; Service blocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Model &amp; Service blocks" />
+    <MESSAGE value="corrected Class Item" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected Class Item" />
   </component>
 </project>
