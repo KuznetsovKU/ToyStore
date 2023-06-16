@@ -10,6 +10,8 @@ public class ExceptionsDescriptor {
         exceptionsDescription.put("MyNotIntegerException", "Введенное значение не является числом.");
         exceptionsDescription.put("MyNullValueException", "Аргумент не был передан.");
         exceptionsDescription.put("MyIllegalWinningFrequencyException", "Некорректное значение. Должно быть от 0 до 100");
+        exceptionsDescription.put("MyAvailableToSaleException", "Товар участвует в розыгрыше и не может быть продан.");
+        exceptionsDescription.put("MyReservedForDrawingException", "Товар находится в продаже и не может участвовать в розыгрыше.");
     }
 
     public String MyIllegalChoiceDescription(String exceptionType) {

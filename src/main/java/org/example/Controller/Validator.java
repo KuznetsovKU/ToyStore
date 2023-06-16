@@ -1,8 +1,10 @@
 package org.example.Controller;
 
+import org.example.Model.Items.Item;
 import org.example.MyExceptions.MyIllegalChoiceException;
 import org.example.MyExceptions.MyNotIntegerException;
 import org.example.MyExceptions.MyNullValueException;
+import org.example.MyExceptions.MySaleOrDrawingAbilityException;
 import org.example.View.ExceptionsDescriptor;
 import org.example.View.Menus;
 import org.example.View.View;
@@ -121,6 +123,20 @@ public class Validator {
         return currentName;
     }
 
+    public boolean isAvailableToSale(Item item) {
+        if (item.getAvailableToSale()) return true;
+        else {
+            throw new MySaleOrDrawingAbilityException(exDesc.MyIllegalChoiceDescription("MyAvailableToSaleException"));
+        }
+    }
+
+    public boolean isReservedForDrawing(Item item) {
+        if (item.getReservedForDrawing()) return true;
+        else {
+            throw new MySaleOrDrawingAbilityException(exDesc.MyIllegalChoiceDescription("MyReservedForDrawingException"));
+        }
+    }
+
     private int integerValidation(String inputValue) {
         try {
             return Integer.parseInt(inputValue);
@@ -144,4 +160,5 @@ public class Validator {
             return inputValue;
         }
     }
+
 }

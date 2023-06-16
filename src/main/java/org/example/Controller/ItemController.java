@@ -46,5 +46,12 @@ public class ItemController {
 
     }
 
-
+    public void makeItemAvailableToSale(Item item) {
+        itSer.changeItemAvailableToSale(item, true);
+        itSer.changeItemReservedForDrawing(item, false);
+    }
+    public void makeItemReservedForDrawing(Item item) {
+        itSer.changeItemReservedForDrawing(item, true);
+        itSer.changeItemAvailableToSale(item, false);
+    }
 }
