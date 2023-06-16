@@ -11,15 +11,15 @@ public abstract class Item {
     protected String id;
     protected String itemType;
     protected String name;
-    protected int choiceFrequency;  // частотность выпадения в розыгрыше
+    protected int winningFrequency;  // частотность выпадения в розыгрыше
     protected boolean availableToSale;  // доступность к продаже
     protected boolean reservedForDrawing;  // зарезервирован для участия в розыгрыше
 
-    public Item(String name, int choiceFrequency, boolean availableToSale, boolean reservedForDrawing) {
+    public Item(String name, int winningFrequency, boolean availableToSale, boolean reservedForDrawing) {
         this.id = makeNewId();
         this.itemType = this.getClass().getSimpleName();
         this.name = name;
-        this.choiceFrequency = choiceFrequency;
+        this.winningFrequency = winningFrequency;
         this.availableToSale = availableToSale;
         this.reservedForDrawing = reservedForDrawing;
     }
@@ -56,12 +56,12 @@ public abstract class Item {
         this.name = name;
     }
 
-    public int getChoiceFrequency() {
-        return choiceFrequency;
+    public int getWinningFrequency() {
+        return winningFrequency;
     }
 
-    public void setChoiceFrequency(int choiceFrequency) {
-        this.choiceFrequency = choiceFrequency;
+    public void setWinningFrequency(int winningFrequency) {
+        this.winningFrequency = winningFrequency;
     }
 
     public boolean getAvailableToSale() {
@@ -86,7 +86,7 @@ public abstract class Item {
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", itemType='" + itemType + '\'' +
-                ", choiceFrequency=" + choiceFrequency +
+                ", winningFrequency=" + winningFrequency +
                 ", availableToSale=" + availableToSale +
                 ", partOfDrawing=" + reservedForDrawing +
                 '}';

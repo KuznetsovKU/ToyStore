@@ -8,18 +8,18 @@ import org.example.Model.Items.Robot;
 public class ItemService implements ItemServiceInterface{
 
     @Override
-    public Item createNewItem(int itemTypeChoice, String name, int choiceFrequency,
+    public Item createNewItem(int itemTypeChoice, String name, int winningFrequency,
                               boolean availableToSale, boolean reservedForDrawing) {
 //        Item newItem = ItemTypes.itemCreateVariants.get(itemTypeChoice);
 //        newItem.setName(name);
-//        newItem.setChoiceFrequency(choiceFrequency);
+//        newItem.setWinningFrequency(winningFrequency);
 //        newItem.setAvailableToSale(availableToSale);
 //        newItem.setReservedForDrawing(reservedForDrawing);
 //        return newItem;
         return switch (itemTypeChoice) {
-            case 1 -> new Constructor(name, choiceFrequency, availableToSale, reservedForDrawing);
-            case 2 -> new Robot(name, choiceFrequency, availableToSale, reservedForDrawing);
-            case 3 -> new Doll(name, choiceFrequency, availableToSale, reservedForDrawing);
+            case 1 -> new Constructor(name, winningFrequency, availableToSale, reservedForDrawing);
+            case 2 -> new Robot(name, winningFrequency, availableToSale, reservedForDrawing);
+            case 3 -> new Doll(name, winningFrequency, availableToSale, reservedForDrawing);
             default -> null;
         };
     }
