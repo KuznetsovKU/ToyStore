@@ -85,7 +85,8 @@ public class Validator {
                 inputValue = isNotNull(inputValue);
                 try {
                     currentWinningFrequency = integerValidation(inputValue);
-                    if (currentWinningFrequency >= 0 && currentWinningFrequency <= 100) isNotValid = false;
+                    if (currentWinningFrequency >= Menus.winningFrequencyBounds.get("min") &&
+                            currentWinningFrequency <= Menus.winningFrequencyBounds.get("max")) isNotValid = false;
                     else {
                         throw new MyIllegalChoiceException(exDesc.MyIllegalChoiceDescription("MyIllegalWinningFrequencyException"));
                     }

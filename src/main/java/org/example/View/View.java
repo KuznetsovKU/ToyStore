@@ -17,4 +17,8 @@ public class View {
     public static void printException(String exception) {
         System.out.println(exception);
     }
+
+    public static void showItemInfo(String itemInfo) {
+        System.out.println(itemInfo);
+    }
 }

@@ -5,10 +5,10 @@ import org.example.Model.Storages.MainStorage;
 import org.example.Model.Storages.StorageToDrawing;
 import org.example.Model.Storages.StorageToSell;
 
-public class ItemInStorageController {
-    MainStorage ms = new MainStorage(1000);
-    StorageToSell sts = new StorageToSell(1000);
-    StorageToDrawing std = new StorageToDrawing(1000);
+public class StorageController {
+    private static final MainStorage ms = new MainStorage(1000);
+    private static final StorageToSell sts = new StorageToSell(1000);
+    private static final StorageToDrawing std = new StorageToDrawing(1000);
 
     public void registerNewItem(Item item) {
         if (item.getAvailableToSale()) {
