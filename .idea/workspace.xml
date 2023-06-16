@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="added README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Constructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Doll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/MainStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToDrawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Storages/StorageToSell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemServiceInterface.java" afterDir="false" />
+    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="added Model &amp; Service blocks">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686821217919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Model &amp; Service blocks">
+      <created>1686895721702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686895721702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,17 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="added README.md" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added Model &amp; Service blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Model &amp; Service blocks" />
   </component>
 </project>

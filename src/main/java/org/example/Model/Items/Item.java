@@ -40,10 +40,6 @@ public abstract class Item {
         return id;
     }
 
-//    public void setId(String id) {
-//        this.id = id;
-//    }
-
     public String getItemType() {
         return itemType;
     }
@@ -68,7 +64,7 @@ public abstract class Item {
         this.choiceFrequency = choiceFrequency;
     }
 
-    public boolean isAvailableToSale() {
+    public boolean getAvailableToSale() {
         return availableToSale;
     }
 
@@ -76,7 +72,7 @@ public abstract class Item {
         this.availableToSale = availableToSale;
     }
 
-    public boolean isReservedForDrawing() {
+    public boolean getReservedForDrawing() {
         return reservedForDrawing;
     }
 
