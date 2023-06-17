@@ -33,7 +33,7 @@ public class StorageToDrawing extends Storage{
     }
 
     @Override
-    public HashMap<String, Integer> getFrequencyDict(Storage storage) {
+    public HashMap<String, Integer> getFrequencyDict() {
         HashMap<String, Integer> frequencyDict = new HashMap<>();
         for (Item item : this.itemList) {
             String type = item.getItemType();

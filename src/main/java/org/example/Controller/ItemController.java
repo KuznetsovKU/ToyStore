@@ -30,9 +30,14 @@ public class ItemController {
         switch (parameterToChange) {
             case 1 -> itSer.changeItemName(item, validator.validateItemNameField("name"));
             case 2 -> itSer.changeItemWinningFrequency(item, validator.validateWinningFrequency("winningFrequency"));
-            case 3 -> itSer.changeItemAvailableToSale(item, validator.validateBooleanMenuChoice("availableToSale"));
-            case 4 ->
-                    itSer.changeItemReservedForDrawing(item, validator.validateBooleanMenuChoice("reservedForDrawing"));
+            case 3 -> {
+                itSer.changeItemAvailableToSale(item, validator.validateBooleanMenuChoice("availableToSale"));
+                itSer.changeItemReservedForDrawing(item, !item.getAvailableToSale());
+            }
+            case 4 -> {
+                itSer.changeItemReservedForDrawing(item, validator.validateBooleanMenuChoice("reservedForDrawing"));
+                itSer.changeItemAvailableToSale(item, !item.getReservedForDrawing());
+            }
             case 5 -> {
                 String name = validator.validateItemNameField("name");
                 int winningFrequency = validator.validateWinningFrequency("winningFrequency");
@@ -53,5 +58,10 @@ public class ItemController {
     public void makeItemReservedForDrawing(Item item) {
         itSer.changeItemReservedForDrawing(item, true);
         itSer.changeItemAvailableToSale(item, false);
+    }
+
+    public void makeItemUnavailable(Item item) {
+        itSer.changeItemAvailableToSale(item, false);
+        itSer.changeItemReservedForDrawing(item, false);
     }
 }

@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.Controller.ItemController;
+import org.example.Controller.Program;
 import org.example.Model.Items.Item;
 import org.example.Service.ItemService;
 import org.example.View.Menus;
@@ -19,8 +20,11 @@ public class Main {
 //
 //        View.printMenu(Menus.itemTypesMenu);
 
-        ItemController itemController = new ItemController();
-        Item item = itemController.createNewItem();
-        System.out.println(item);
+//        ItemController itemController = new ItemController();
+//        Item item = itemController.createNewItem();
+//        System.out.println(item);
+
+        Program program = new Program();
+        program.startProgram();
     }
 }

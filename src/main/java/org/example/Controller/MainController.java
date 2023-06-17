@@ -1,7 +1,11 @@
 package org.example.Controller;
 
 import org.example.Model.Items.Item;
-import org.example.View.View;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 public class MainController {
     ItemController itemController = new ItemController();
@@ -11,16 +15,12 @@ public class MainController {
         storageController.registerNewItem(itemController.createNewItem());
     }
 
-    public void showItemInfo(Item item) {
-        View.showItemInfo(itemController.showItemInfo(item));
+    public String getItemInfo(Item item) {
+        return itemController.showItemInfo(item);
     }
 
     public void changeItem(Item item) {
         itemController.changeItem(item);
-    }
-
-    public void registerNewItem(Item item) {
-        storageController.registerNewItem(item);
     }
 
     public void addItemToSell(Item item) {
@@ -37,8 +37,35 @@ public class MainController {
         storageController.addItemToDrawing(item);
     }
 
-    private void deleteItem(Item item) {
+    public void makeItemUnavailable(Item item) {
+        itemController.makeItemUnavailable(item);
+        storageController.makeItemUnavailable(item);
+    }
+
+    public void deleteItem(Item item) {
         storageController.deleteItemFromStorage(item);
 
+    }
+
+    public LinkedHashMap<Integer, String> getStorageList() {
+        return storageController.getStorageList();
+    }
+
+    public List<Item> getItemList(int storageChoice) {
+        return storageController.getItemList(storageChoice);
+    }
+
+    public HashMap<String, Integer> getFrequencyDict (int storageChoice) {
+        return storageController.getFrequencyDict(storageChoice);
+    }
+
+    public List<Item> findItem(int findItemMenuCommand, String searchingParameter) {
+        List<Item> result = switch (findItemMenuCommand) {
+            case 1 -> storageController.findItemById(searchingParameter);
+            case 2 -> storageController.findItemByType(searchingParameter);
+            case 3 -> storageController.findItemByName(searchingParameter);
+            default -> new ArrayList<>();
+        };
+        return result;
     }
 }

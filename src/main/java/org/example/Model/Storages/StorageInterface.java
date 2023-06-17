@@ -12,6 +12,6 @@ public interface StorageInterface {
 
     List<Item> getItemList();
 
-    HashMap<String, Integer> getFrequencyDict(Storage storage);
+    HashMap<String, Integer> getFrequencyDict();
 
 }

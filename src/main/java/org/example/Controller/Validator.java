@@ -9,9 +9,7 @@ import org.example.View.ExceptionsDescriptor;
 import org.example.View.Menus;
 import org.example.View.View;
 
-import java.util.LinkedHashMap;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Validator {
     ExceptionsDescriptor exDesc = new ExceptionsDescriptor();
@@ -20,7 +18,7 @@ public class Validator {
         boolean currentAnswer = false;
         boolean isNotValid = true;
         while (isNotValid) {
-            View.printMenuAction(Menus.menuActions.get(menuAction));
+            View.printMenuAction(Menus.actionsMenu.get(menuAction));
             View.printMenu(Menus.booleanMenu);
             String inputValue = new Scanner(System.in).next();
             try {
@@ -32,15 +30,15 @@ public class Validator {
                     } else if (inputValue.equalsIgnoreCase("2") || inputValue.equalsIgnoreCase("no") || inputValue.equalsIgnoreCase("нет")) {
                         isNotValid = false;
                     } else {
-                        throw new MyIllegalChoiceException(exDesc.MyIllegalChoiceDescription("MyIllegalChoiceException"));
+                        throw new MyIllegalChoiceException(exDesc.MyExceptionsDescription("MyIllegalChoiceException"));
                     }
                 }
                 catch (MyIllegalChoiceException e2) {
-                    View.printException(e2.getMessage() + "");
+                    View.printMessage(e2.getMessage() + "");
                 }
             }
             catch (MyNullValueException e1) {
-                View.printException(e1.getMessage());
+                View.printMessage(e1.getMessage());
             }
         }
         return currentAnswer;
@@ -50,7 +48,7 @@ public class Validator {
         Integer currentCommand = null;
         boolean isNotValid = true;
         while (isNotValid) {
-            View.printMenuAction(Menus.menuActions.get(menuAction));
+            View.printMenuAction(Menus.actionsMenu.get(menuAction));
             View.printMenu(menu);
             String inputValue = new Scanner(System.in).next();
             try {
@@ -61,17 +59,17 @@ public class Validator {
                         if (isContained(menu.keySet(), currentCommand)) {
                             isNotValid = false;
                         } else {
-                            throw new MyIllegalChoiceException(exDesc.MyIllegalChoiceDescription("MyIllegalChoiceException"));
+                            throw new MyIllegalChoiceException(exDesc.MyExceptionsDescription("MyIllegalChoiceException"));
                         }
                     }
                     catch (MyIllegalChoiceException e) {
-                        View.printException(e.getMessage());
+                        View.printMessage(e.getMessage());
                     }
                 } catch (MyNotIntegerException e) {
-                    View.printException(e.getMessage());
+                    View.printMessage(e.getMessage());
                 }
             } catch (MyNullValueException e1) {
-                View.printException(e1.getMessage());
+                View.printMessage(e1.getMessage());
             }
         }
         return currentCommand;
@@ -81,7 +79,7 @@ public class Validator {
         int currentWinningFrequency = -1;
         boolean isNotValid = true;
         while (isNotValid) {
-            View.printMenuAction(Menus.menuActions.get(menuAction));
+            View.printMenuAction(Menus.actionsMenu.get(menuAction));
             String inputValue = new Scanner(System.in).next();
             try {
                 inputValue = isNotNull(inputValue);
@@ -90,16 +88,16 @@ public class Validator {
                     if (currentWinningFrequency >= Menus.winningFrequencyBounds.get("min") &&
                             currentWinningFrequency <= Menus.winningFrequencyBounds.get("max")) isNotValid = false;
                     else {
-                        throw new MyIllegalChoiceException(exDesc.MyIllegalChoiceDescription("MyIllegalWinningFrequencyException"));
+                        throw new MyIllegalChoiceException(exDesc.MyExceptionsDescription("MyIllegalWinningFrequencyException"));
                     }
                 } catch (MyIllegalChoiceException e2) {
-                    View.printException(e2.getMessage() + "");
+                    View.printMessage(e2.getMessage() + "");
                 } catch (MyNotIntegerException e) {
-                    View.printException(e.getMessage());
+                    View.printMessage(e.getMessage());
                 }
             }
             catch (MyNullValueException e1) {
-                View.printException(e1.getMessage());
+                View.printMessage(e1.getMessage());
             }
         }
         return currentWinningFrequency;
@@ -109,7 +107,7 @@ public class Validator {
         String currentName = null;
         boolean isNotValid = true;
         while (isNotValid) {
-            View.printMenuAction(Menus.menuActions.get(menuAction));
+            View.printMenuAction(Menus.actionsMenu.get(menuAction));
             String inputValue = new Scanner(System.in).next();
             try {
                 inputValue = isNotNull(inputValue);
@@ -117,7 +115,7 @@ public class Validator {
                 isNotValid = false;
             }
             catch (MyNullValueException e1) {
-                View.printException(e1.getMessage());
+                View.printMessage(e1.getMessage());
             }
         }
         return currentName;
@@ -126,14 +124,14 @@ public class Validator {
     public boolean isAvailableToSale(Item item) {
         if (item.getAvailableToSale()) return true;
         else {
-            throw new MySaleOrDrawingAbilityException(exDesc.MyIllegalChoiceDescription("MyAvailableToSaleException"));
+            throw new MySaleOrDrawingAbilityException(exDesc.MyExceptionsDescription("MyAvailableToSaleException"));
         }
     }
 
     public boolean isReservedForDrawing(Item item) {
         if (item.getReservedForDrawing()) return true;
         else {
-            throw new MySaleOrDrawingAbilityException(exDesc.MyIllegalChoiceDescription("MyReservedForDrawingException"));
+            throw new MySaleOrDrawingAbilityException(exDesc.MyExceptionsDescription("MyReservedForDrawingException"));
         }
     }
 
@@ -142,7 +140,7 @@ public class Validator {
             return Integer.parseInt(inputValue);
         }
         catch (IllegalArgumentException e) {
-            throw new MyNotIntegerException(exDesc.MyIllegalChoiceDescription("MyNotIntegerException"));
+            throw new MyNotIntegerException(exDesc.MyExceptionsDescription("MyNotIntegerException"));
         }
     }
 
@@ -155,7 +153,7 @@ public class Validator {
 
     private String isNotNull(String inputValue) {
         if (inputValue == null || inputValue.isEmpty()) {
-            throw new MyNullValueException(exDesc.MyIllegalChoiceDescription("MyNullValueException"));
+            throw new MyNullValueException(exDesc.MyExceptionsDescription("MyNullValueException"));
         } else {
             return inputValue;
         }

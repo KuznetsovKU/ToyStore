@@ -44,7 +44,7 @@ public class ItemService implements ItemServiceInterface{
         item.setAvailableToSale(availableToSale);
     }
     public void changeItemReservedForDrawing(Item item, boolean reservedForDrawing) {
-        item.setAvailableToSale(reservedForDrawing);
+        item.setReservedForDrawing(reservedForDrawing);
     }
 
 }
