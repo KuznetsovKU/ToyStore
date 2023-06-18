@@ -7,4 +7,10 @@ public class Doll extends Item{
 
     public Doll() {
     }
+
+    @Override
+    public int compareTo(Item other) {
+        return other.getWinningFrequency() - this.getWinningFrequency();
+    }
+
 }

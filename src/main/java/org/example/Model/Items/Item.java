@@ -1,7 +1,7 @@
 package org.example.Model.Items;
 
 
-public abstract class Item {
+public abstract class Item implements Comparable<Item>{
     private static int idMaker;
 
     static {
@@ -89,6 +89,15 @@ public abstract class Item {
                 ", winningFrequency=" + winningFrequency +
                 ", availableToSale=" + availableToSale +
                 ", partOfDrawing=" + reservedForDrawing +
+                '}';
+    }
+
+    public String getShortInfo() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", itemType='" + itemType + '\'' +
+                ", winningFrequency=" + winningFrequency +
                 '}';
     }
 

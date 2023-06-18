@@ -57,7 +57,8 @@ public class Program {
                     continue;
                 case 4:  // "Провести розыгрыш"
                     DrawingController dc = new DrawingController();
-                    dc.startDrawing(mc.getItemList(3));
+                    List<Item> alreadyDrownedItems = dc.startDrawing(mc.getItemList(3));
+                    deleteDrownedItems(alreadyDrownedItems);
                     continue;
                 case 0:  // "Завершить работу с программой"
                     View.printMenuAction(Menus.actionsMenu.get("farewell"));
@@ -136,4 +137,11 @@ public class Program {
         sc.registerNewItem(is.createNewItem(3, "Barbie_9", 60, false, true));
         sc.registerNewItem(is.createNewItem(3, "Ken", 60, false, true));
     }
+
+    private void deleteDrownedItems(List<Item> alreadyDrownedItems) {
+        for (Item item : alreadyDrownedItems) {
+            mc.deleteItem(item);
+        }
+    }
+
 }

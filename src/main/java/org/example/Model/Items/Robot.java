@@ -7,4 +7,10 @@ public class Robot extends Item{
 
     public Robot() {
     }
+
+    @Override
+    public int compareTo(Item other) {
+        return other.getWinningFrequency() - this.getWinningFrequency();
+    }
+
 }

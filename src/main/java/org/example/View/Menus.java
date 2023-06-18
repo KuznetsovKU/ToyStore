@@ -40,6 +40,13 @@ public class Menus {
         itemActionMenu.put(0, "Возврат к предыдущему меню");
     }
 
+    public static LinkedHashMap<Integer, String> drawingActionMenu = new LinkedHashMap<>();
+    static {
+        drawingActionMenu.put(1, "Провести раунд");
+        drawingActionMenu.put(2, "Показать оставшиеся призы");
+        drawingActionMenu.put(0, "Прервать розыгрыш");
+    }
+
     public static HashMap<String, String> actionsMenu = new HashMap<>();
     static {
         actionsMenu.put("greetings", "Добро пожаловать в магазин игрушек!");
@@ -64,6 +71,16 @@ public class Menus {
         actionsMenu.put("notEmptyStorage", "Найдены следующие позиции.");
         actionsMenu.put("searchingFailure", "К сожалению, по запросу ничего не найдено.");
         actionsMenu.put("specifiedChoice", "Укажите нужный ID из предложенного списка.");
+
+        actionsMenu.put("availableToDrawing", "Для розыгрыша доступны следующие товары:");
+        actionsMenu.put("getRoundAmount", "Сколько в розыгрыше будет раундов?");
+        actionsMenu.put("itemsInDrawing", "В розыгрыше участвуют следующие товары:");
+        actionsMenu.put("itemsStillInDrawing", "В розыгрыше остались следующие товары:");
+        actionsMenu.put("drownedItem", "Разыгран следующий товар:");
+        actionsMenu.put("emptyDrawingList", "Все товары из списка уже разыграны.");
+        actionsMenu.put("roundCounter", "За время розыгрыша было проведено раундов: ");
+        actionsMenu.put("drownedItemList", "Были разыграны следующие призы:");
+        actionsMenu.put("drawingInterrupt", "Розыгрыш был прерван досрочно.");
     }
 
     public static LinkedHashMap<Integer, String> itemTypesMenu = new LinkedHashMap<>();

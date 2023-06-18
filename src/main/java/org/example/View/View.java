@@ -41,6 +41,10 @@ public class View {
         System.out.println(reservedForDrawing + spaceBuilder(reservedForDrawing) + ": " + item.getReservedForDrawing());
     }
 
+    public static void showShortItemInfo(Item item) {
+        System.out.println(item.getShortInfo());
+    }
+
     public static void showItemList(List<Item> itemList) {
         for (Item item : itemList) {
             showItemInfo(item.toString());
@@ -52,6 +56,19 @@ public class View {
         for (String key : frequencyDict.keySet()) {
             System.out.println(key + spaceBuilder(key) + ": " + frequencyDict.get(key));
         }
+    }
+
+    public static void showDrawingCategoryDict(HashMap<String, Integer> frequencyDict,
+                                               HashMap<String, List<Item>> categorisedDict) {
+
+        System.out.println();
+        System.out.println("Итого:");
+        for (String key : frequencyDict.keySet()) {
+            System.out.println("Тип товара: " + key + spaceBuilder(key) +
+                    "| Частота выпадения в розыгрыше: " + frequencyDict.get(key) +
+                    "   | Количество в розыгрыше: " + categorisedDict.get(key).size());
+        }
+        System.out.println();
     }
 
     private static String spaceBuilder(String inputValue) {

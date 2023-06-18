@@ -7,4 +7,10 @@ public class Constructor extends Item{
 
     public Constructor() {
     }
+
+    @Override
+    public int compareTo(Item other) {
+        return other.getWinningFrequency() - this.getWinningFrequency();
+    }
+
 }
