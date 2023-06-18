@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="updated Program, Menus, added DrawingController">
+    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="updated Controller, View, Model.Items">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Controller/DrawingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/DrawingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Constructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Doll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Doll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/Items/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/Menus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/ExceptionsDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/ExceptionsDescriptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Personal documents/Education/=Projects/Java_Intro"
+    "last_opened_file_path": "D:/Personal documents/Education/=Projects/Exeptions_Intro"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -160,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687078545047</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated Controller, View, Model.Items">
+      <created>1687097975735</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687097975735</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +188,7 @@
     <MESSAGE value="added controller, MyExceptions" />
     <MESSAGE value="updatad Controller, Service, View, Model.Storages" />
     <MESSAGE value="updated Program, Menus, added DrawingController" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Program, Menus, added DrawingController" />
+    <MESSAGE value="updated Controller, View, Model.Items" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Controller, View, Model.Items" />
   </component>
 </project>

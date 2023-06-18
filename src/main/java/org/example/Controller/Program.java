@@ -58,6 +58,8 @@ public class Program {
                 case 4:  // "Провести розыгрыш"
                     DrawingController dc = new DrawingController();
                     List<Item> alreadyDrownedItems = dc.startDrawing(mc.getItemList(3));
+                    FileController fc = new FileController();
+                    fc.fillFileFromList("DrawingResults", alreadyDrownedItems);
                     deleteDrownedItems(alreadyDrownedItems);
                     continue;
                 case 0:  // "Завершить работу с программой"

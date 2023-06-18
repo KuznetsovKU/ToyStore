@@ -13,6 +13,8 @@ public class ExceptionsDescriptor {
         exceptionsDescription.put("MyAvailableToSaleException", "Товар участвует в розыгрыше и не может быть продан.");
         exceptionsDescription.put("MyReservedForDrawingException", "Товар находится в продаже и не может участвовать в розыгрыше.");
         exceptionsDescription.put("MyValueNotFoundException", "Товар(ы) с указанными характеристиками не найдены. Проверьте введенные данные и повторите поиск.");
+        exceptionsDescription.put("FileAlreadyExistsDescription", "Файл уже существует.");
+        exceptionsDescription.put("FileNotFoundDescription", "Файл не найден.");
     }
 
     public String MyExceptionsDescription(String exceptionType) {
