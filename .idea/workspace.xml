@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="updated Controller, View, Model.Items">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/FileController.java" afterDir="false" />
+    <list default="true" id="8c09f8e1-83c0-468d-bf88-610a1e43381e" name="Changes" comment="updated Program, ExceptionsDescriptor, added FileController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/ItemTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/ExceptionsDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/ExceptionsDescriptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687097975735</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated Program, ExceptionsDescriptor, added FileController">
+      <created>1687101854568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687101854568</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +192,7 @@
     <MESSAGE value="updatad Controller, Service, View, Model.Storages" />
     <MESSAGE value="updated Program, Menus, added DrawingController" />
     <MESSAGE value="updated Controller, View, Model.Items" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Controller, View, Model.Items" />
+    <MESSAGE value="updated Program, ExceptionsDescriptor, added FileController" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated Program, ExceptionsDescriptor, added FileController" />
   </component>
 </project>

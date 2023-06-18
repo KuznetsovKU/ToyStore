@@ -1,0 +1,108 @@
+1)   Используйте команды операционной системы Linux и создайте две новых директории – «Игрушки для школьников» и «Игрушки для дошколят»
+
+kir@kir-VB-Linux:~$ mkdir "Игрушки для школьников" "Игрушки для дошколят"
+kir@kir-VB-Linux:~$ ls -l
+итого 56
+-rwxrwxr-x 1 kir  kir     391 мая 22 19:07  cleaner_script
+drwxrwx--- 1 root vboxsf    0 апр 20 18:57  Exchange_Folder
+drwx------ 5 kir  kir    4096 июн  4 12:25  snap
+-rwxrwxr-x 1 kir  kir     267 июн  4 15:15  some_script.sh
+drwxrwxr-x 2 kir  kir    4096 мая 22 19:08  testdir
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Видео
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Документы
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Загрузки
+drwxrwxr-x 2 kir  kir    4096 июн 18 20:07 'Игрушки для дошколят'
+drwxrwxr-x 2 kir  kir    4096 июн 18 20:07 'Игрушки для школьников'
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Изображения
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Музыка
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Общедоступные
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21 'Рабочий стол'
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Шаблоны
+
+2)   Создайте в директории «Игрушки для школьников» текстовые файлы - «Роботы», «Конструктор», «Настольные игры»
+
+kir@kir-VB-Linux:~$ cd Игрушки\ для\ школьников/
+kir@kir-VB-Linux:~/Игрушки для школьников$ touch "Роботы" "Конструктор" "Настольные игры"
+kir@kir-VB-Linux:~/Игрушки для школьников$ ls -l
+итого 0
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Конструктор
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09 'Настольные игры'
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Роботы
+
+3)    Создайте в директории «Игрушки для дошколят» текстовые файлы «Мягкие игрушки», «Куклы», «Машинки»
+
+kir@kir-VB-Linux:~/Игрушки для школьников$ cd ../Игрушки\ для\ дошколят/
+kir@kir-VB-Linux:~/Игрушки для дошколят$ touch "Мягкие игрушки" "Куклы" "Машинки"
+kir@kir-VB-Linux:~/Игрушки для дошколят$ ls -l
+итого 0
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Куклы
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Машинки
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10 'Мягкие игрушки'
+kir@kir-VB-Linux:~/Игрушки для дошколят$
+
+4)   Объединить 2 директории в одну «Имя Игрушки»
+
+kir@kir-VB-Linux:~/Игрушки для дошколят$ cd ..
+kir@kir-VB-Linux:~$ mv Игрушки\ для\ школьников "Имя Игрушки"
+kir@kir-VB-Linux:~$ mv Игрушки\ для\ дошколят "Имя Игрушки"
+kir@kir-VB-Linux:~$ cd Имя\ Игрушки/
+kir@kir-VB-Linux:~/Имя Игрушки$ cd Игрушки\ для\ дошколят/
+kir@kir-VB-Linux:~/Имя Игрушки/Игрушки для дошколят$ mv Куклы ..
+kir@kir-VB-Linux:~/Имя Игрушки/Игрушки для дошколят$ mv Машинки ..
+kir@kir-VB-Linux:~/Имя Игрушки/Игрушки для дошколят$ mv Мягкие\ игрушки ..
+kir@kir-VB-Linux:~/Имя Игрушки/Игрушки для дошколят$ cd ..
+kir@kir-VB-Linux:~/Имя Игрушки$ rm -r Игрушки\ для\ дошколят/
+kir@kir-VB-Linux:~/Имя Игрушки$ ls -l
+итого 0
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Конструктор
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Куклы
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Машинки
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10 'Мягкие игрушки'
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09 'Настольные игры'
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Роботы
+
+5)   Переименовать директорию «Имя Игрушки» в «Игрушки»
+
+kir@kir-VB-Linux:~/Имя Игрушки$ cd ..
+kir@kir-VB-Linux:~$ mv Имя\ Игрушки "Игрушки"
+kir@kir-VB-Linux:~$ ls -l
+итого 52
+-rwxrwxr-x 1 kir  kir     391 мая 22 19:07  cleaner_script
+drwxrwx--- 1 root vboxsf    0 апр 20 18:57  Exchange_Folder
+drwx------ 5 kir  kir    4096 июн  4 12:25  snap
+-rwxrwxr-x 1 kir  kir     267 июн  4 15:15  some_script.sh
+drwxrwxr-x 2 kir  kir    4096 мая 22 19:08  testdir
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Видео
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Документы
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Загрузки
+drwxrwxr-x 2 kir  kir    4096 июн 18 20:20  Игрушки
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Изображения
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Музыка
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Общедоступные
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21 'Рабочий стол'
+drwxr-xr-x 2 kir  kir    4096 апр 20 16:21  Шаблоны
+
+6)   Просмотреть содержимое каталога «Игрушки».
+
+kir@kir-VB-Linux:~$ cd Игрушки/
+kir@kir-VB-Linux:~/Игрушки$ ls -l
+итого 0
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Конструктор
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Куклы
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10  Машинки
+-rw-rw-r-- 1 kir kir 0 июн 18 20:10 'Мягкие игрушки'
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09 'Настольные игры'
+-rw-rw-r-- 1 kir kir 0 июн 18 20:09  Роботы
+kir@kir-VB-Linux:~/Игрушки$
+
+
+7)   Установить и удалить snap-пакет. (Любой, какой хотите)
+
+kir@kir-VB-Linux:~$ sudo snap install vlc
+vlc 3.0.18 от VideoLAN✓ установлен
+
+8)   Добавить произвольную задачу для выполнения каждые 3 минуты (Например, запись в текстовый файл чего-то или копирование из каталога А в каталог Б).
+
+kir@kir-VB-Linux:~$ crontab -e
+*/3 * * * * cp /home/test.txt /home/backup/test.txt.bak
+
