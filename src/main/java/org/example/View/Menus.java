@@ -51,6 +51,7 @@ public class Menus {
         actionsMenu.put("winningFrequency", "Укажите частоту выпадения товара в розыгрышах (в процентах)");
         actionsMenu.put("availableToSale", "Товар доступен к продаже?");
         actionsMenu.put("reservedForDrawing", "Товар участвует в розыгрыше?");
+        actionsMenu.put("addingSuccess", "Товар успешно оприходован.");
 
         actionsMenu.put("attributeToChangeMenu", "Что Вы хотите изменить в товаре?");
 

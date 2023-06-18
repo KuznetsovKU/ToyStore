@@ -1,6 +1,7 @@
 package org.example.Controller;
 
 import org.example.Model.Items.Item;
+import org.example.Service.ItemService;
 import org.example.View.Menus;
 import org.example.View.View;
 
@@ -11,6 +12,7 @@ public class Program {
     MainController mc = new MainController();
     Validator validator = new Validator();
     public void startProgram() {
+        importTestSample();
         View.printMenuAction(Menus.actionsMenu.get("greetings"));
         boolean programIsRunning = true;
         while (programIsRunning) {
@@ -28,7 +30,7 @@ public class Program {
                     continue;
                 case 2:  // "Оприходовать товар"
                     mc.createNewItem();
-
+                    View.printMenuAction(Menus.actionsMenu.get("addingSuccess"));
                     continue;
                 case 3:  // "Найти товар"
                     boolean inSearchingMenu = true;
@@ -54,7 +56,8 @@ public class Program {
                     }
                     continue;
                 case 4:  // "Провести розыгрыш"
-
+                    DrawingController dc = new DrawingController();
+                    dc.startDrawing(mc.getItemList(3));
                     continue;
                 case 0:  // "Завершить работу с программой"
                     View.printMenuAction(Menus.actionsMenu.get("farewell"));
@@ -107,5 +110,30 @@ public class Program {
                 case 0 -> inItemMenu = false;
             }
         }
+    }
+
+    private void importTestSample() {
+        StorageController sc = new StorageController();
+        ItemService is = new ItemService();
+        sc.registerNewItem(is.createNewItem(2, "R2D2", 20, false, true));
+        sc.registerNewItem(is.createNewItem(2, "C3PO", 20, false, true));
+        sc.registerNewItem(is.createNewItem(2, "Optimus_Prime", 20, false, true));
+        sc.registerNewItem(is.createNewItem(2, "Bumblebee", 20, false, true));
+        sc.registerNewItem(is.createNewItem(2, "Bander", 20, false, true));
+        sc.registerNewItem(is.createNewItem(1, "Lego_1", 20, false, true));
+        sc.registerNewItem(is.createNewItem(1, "Lego_2", 20, false, true));
+        sc.registerNewItem(is.createNewItem(1, "Lego_3", 20, false, true));
+        sc.registerNewItem(is.createNewItem(1, "Lego_4", 20, false, true));
+        sc.registerNewItem(is.createNewItem(1, "Lego_5", 20, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_1", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_2", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_3", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_4", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_5", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_6", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_7", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_8", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Barbie_9", 60, false, true));
+        sc.registerNewItem(is.createNewItem(3, "Ken", 60, false, true));
     }
 }
